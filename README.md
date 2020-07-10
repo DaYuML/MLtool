@@ -20,7 +20,7 @@
 aria2c 链接
 # 或者
 aria2c -s 2 -x 2 -j 10 -c http://dl_dir.qq.com/qqfile/qq/QQ2011/QQ2011.exe
-# 具体的可以自己去查查
+# 具体的可以自己去查查，不加修改的情况下，默认都是下载到当前目录
 ```
 | 工具介绍 |
 | :-------- |
@@ -31,9 +31,17 @@ aria2c -s 2 -x 2 -j 10 -c http://dl_dir.qq.com/qqfile/qq/QQ2011/QQ2011.exe
 ```powershell
 # 一般
 wget 链接
-# 具体的可以自己去查查
+# 具体的可以自己去查查，不加修改的情况下，默认都是下载到当前目录
 ```
-
+#### 网速查看工具
+- **工具名字** : slurm ;
+- **实例** : 
+```powershell
+slurm -i enp2s0
+# slurm -i 网卡号
+# 不清楚的可以使用如下命令查看网卡
+ifconfig
+```
 
 ### 其他工具
 #### 画图工具

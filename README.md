@@ -28,12 +28,12 @@ axel -n 32 链接
 --search[=x] , -S [x]        搜索镜像
 --header=x , -H x            添加头文件字符串x（指定 HTTP header）
 --user-agent=x , -U x        设置用户代理（指定 HTTP user agent）
---no-proxy ， -N             不使用代理服务器
---quiet ， -q                静默模式
---verbose ，-v               更多状态信息
---alternate ， -a            Alternate progress indicator
---help ，-h                  帮助
---version ，-V               版本信息
+--no-proxy , -N             不使用代理服务器
+--quiet , -q                静默模式
+--verbose , -v               更多状态信息
+--alternate , -a            Alternate progress indicator
+--help , -h                  帮助
+--version , -V               版本信息
 ```
 | 工具介绍 |
 | :-------- |

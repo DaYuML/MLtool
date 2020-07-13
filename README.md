@@ -13,6 +13,32 @@
 ### 服务器工具
 
 #### 下载工具
+- **工具名字** : axel ;
+- **实例** : 
+```powershell
+# 一般
+axel 链接
+# 或者
+axel -n 32 链接
+# 具体的可以自己去查查，不加修改的情况下，默认都是下载到当前目录
+# 软件选项参数：
+--max-speed=x , -s x         最高速度x
+--num-connections=x , -n x   连接数x
+--output=f , -o f            下载为本地文件f
+--search[=x] , -S [x]        搜索镜像
+--header=x , -H x            添加头文件字符串x（指定 HTTP header）
+--user-agent=x , -U x        设置用户代理（指定 HTTP user agent）
+--no-proxy ， -N             不使用代理服务器
+--quiet ， -q                静默模式
+--verbose ，-v               更多状态信息
+--alternate ， -a            Alternate progress indicator
+--help ，-h                  帮助
+--version ，-V               版本信息
+```
+| 工具介绍 |
+| :-------- |
+| 现在从国外一些服务器下载数据实在是太慢了，虽然可是使用aspera等工具下载ncbi的数据，但是并不是所有站点都支持aspera。无奈只能使用curl或者wget下载。尽管我使用的是100M的企业网，有些数据还是慢。这时候就可以使用axel工具了。axel 是Linux下一个高速下载工具。支持多来源、多线程、断点续传。也就是可以从多个地址或者从一个地址的多个连接来下载同一个文件，类似迅雷，总之就是下载速度比wget快，而且快很多。 |
+
 - **工具名字** : aria2c ;
 - **实例** : 
 ```powershell
